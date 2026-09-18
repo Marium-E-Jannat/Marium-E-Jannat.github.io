@@ -76,3 +76,142 @@
       margin-top: 60px;
       color: #888;
     }
+
+/* =====================================================
+   PERSONAL PAGE
+   ===================================================== */
+
+#personal {
+  margin-top: 25px;
+}
+
+#personal h2,
+.creative-section h2 {
+  font-size: 1.15em;
+  margin-top: 25px;
+  margin-bottom: 12px;
+}
+
+#personal p,
+.creative-section p {
+  line-height: 1.6;
+  text-align: justify;
+}
+
+
+/* =====================================================
+   CREATIVE SECTIONS
+   ===================================================== */
+
+.creative-section {
+  margin-top: 25px;
+  margin-bottom: 30px;
+}
+
+
+/* =====================================================
+   PHOTO GALLERIES
+   ===================================================== */
+
+.creative-gallery {
+  display: grid;
+
+  /* Three photos per row on a desktop */
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 18px;
+
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+
+/* Individual gallery item */
+
+.gallery-item {
+  margin: 0;
+}
+
+
+/* Gallery images */
+
+.gallery-item img {
+  width: 100%;
+
+  /* Keeps every thumbnail the same height */
+  height: 190px;
+
+  /* Prevents distortion */
+  object-fit: cover;
+
+  display: block;
+
+  border-radius: 3px;
+}
+
+
+/* Captions */
+
+.gallery-item figcaption {
+  margin-top: 7px;
+
+  font-size: 0.85em;
+
+  color: #666;
+
+  text-align: center;
+
+  line-height: 1.4;
+}
+
+
+/* Slight visual effect when hovering over an image */
+
+.gallery-item img {
+  transition: transform 0.2s ease,
+              opacity 0.2s ease;
+}
+
+.gallery-item img:hover {
+  transform: scale(1.015);
+  opacity: 0.92;
+}
+
+
+/* =====================================================
+   TABLET
+   ===================================================== */
+
+@media (max-width: 800px) {
+
+  .creative-gallery {
+
+    /* Two photos per row */
+    grid-template-columns: repeat(2, 1fr);
+
+  }
+
+}
+
+
+/* =====================================================
+   MOBILE
+   ===================================================== */
+
+@media (max-width: 500px) {
+
+  .creative-gallery {
+
+    /* One photo per row */
+    grid-template-columns: 1fr;
+
+  }
+
+  .gallery-item img {
+
+    /* Preserve natural image proportions on phones */
+    height: auto;
+
+  }
+
+}
