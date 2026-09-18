@@ -11,7 +11,7 @@
   scroll-behavior: smooth;   /* Optional: smooth scrolling */
 }
 .container {
-    width: 85%;
+    width: 80%;
     max-width: 1050px;
     margin: 0 auto;
     padding: 20px;
