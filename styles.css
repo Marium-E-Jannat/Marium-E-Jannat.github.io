@@ -287,3 +287,13 @@
   }
 
 }
+.paper-title {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.05em;
+  font-weight: 600;
+  color: #005fa3;
+  text-decoration: none;
+}
+.paper-title:hover {
+  text-decoration: underline;
+}
