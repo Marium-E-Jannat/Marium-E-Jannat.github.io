@@ -217,3 +217,62 @@
   }
 
 }
+
+/* =====================================================
+   PUBLICATIONS
+   ===================================================== */
+
+.publication {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+
+  margin-top: 20px;
+  margin-bottom: 25px;
+}
+
+
+/* Teaser image */
+
+.publication-image {
+  flex: 0 0 180px;
+}
+
+.publication-image img {
+  width: 180px;
+  height: 115px;
+
+  object-fit: contain;
+
+  display: block;
+}
+
+
+/* Publication citation */
+
+.publication-info {
+  flex: 1;
+  line-height: 1.5;
+  text-align: justify;
+}
+
+
+/* Mobile */
+
+@media (max-width: 650px) {
+
+  .publication {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .publication-image {
+    flex: none;
+  }
+
+  .publication-image img {
+    width: 220px;
+    height: auto;
+  }
+
+}
