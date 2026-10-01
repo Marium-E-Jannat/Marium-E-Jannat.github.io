@@ -4,7 +4,7 @@ var m=document.querySelector('main'),w=document.createElement('div');w.className
 var hs=[].slice.call(m.querySelectorAll('h2'));
 var pn=hs.map(function(h,i){if(!h.id)h.id='s'+i;return '<a href="#'+h.id+'">'+h.textContent+'</a>'}).join('');
 var a=document.createElement('aside');a.id='sd';a.setAttribute('aria-label','Profile');
-a.innerHTML='<div class="who"><div class="frame"><img src="mariumj.png" alt="Portrait of Marium-E- Jannat"></div><div><h1>Marium-E- Jannat</h1><p class="role">PhD in Computer Science (HCI),<br> University of British Columbia<br> Okanagan Campus, Canada<br>Research Assistant, <a href="https://ovi.ok.ubc.ca/" target="_blank" rel="noopener noreferrer" style="color:var(--mute); text-decoration:underline;">OVI Lab</a></p></div></div>'+
+a.innerHTML='<div class="who"><div class="frame"><img src="mariumj.png" alt="Portrait of Marium-E- Jannat"></div><div><h1>Marium-E- Jannat</h1><p class="role">PhD in Computer Science (HCI),<br> University of British Columbia<br> Okanagan Campus, Canada<br>Research Assistant, <a href="https://ovi.ok.ubc.ca/" target="_blank" rel="noopener noreferrer" style="color:var(--mute); text-decoration:underline;">OVI Lab</a><br>Email: marium.jannat@ubc.ca</p></div></div>'+
 //'<div class="lk"><a href="mailto:'+e+'">'+e+'</a><a href="'+S+'">Google Scholar</a><a href="'+L+'">LinkedIn</a></div>'//
 '<div class="lk">' +
     // Email Envelope Icon
